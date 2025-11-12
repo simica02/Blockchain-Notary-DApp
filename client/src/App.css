@@ -1,0 +1,133 @@
+/* === App.css - KONAČNA, KOMPAKTNA VERZIJA === */
+
+/* --- GLAVNI KONTEJNER --- */
+.App {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 750px; /* Postavljamo razumnu max-širinu */
+  box-sizing: border-box;
+  margin: 0; /* Centriranje je sada u #root */
+}
+
+/* === ZAGLAVLJE I STATUS === */
+.App-header {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.App-header h1 {
+  color: #007bff;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.status {
+  font-size: 0.85rem;
+  color: #6c757d;
+  min-height: 1.5em;
+  padding-top: 5px;
+  word-break: break-all;
+}
+
+.account-info {
+  font-size: 0.75rem;
+  color: #007bff;
+  background-color: #e7f3ff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  word-break: break-all;
+}
+
+/* Dugme za povezivanje */
+.App-header button {
+    width: auto;
+    padding: 8px 15px !important;
+    margin-top: 0.5rem;
+}
+
+/* --- KARTICE (MAIN) --- */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem; /* Još manje razmaka */
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 12px; /* Veoma kompaktno padding */
+  border: 1px solid #dee2e6;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    font-size: 1.2rem; /* Kompaktni naslov */
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #343a40;
+}
+
+.card p {
+    font-size: 0.75rem; /* Najmanji čitljiv tekst */
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+/* === INPUTS I DUGMAD === */
+input[type="file"], input[type="text"] {
+    margin: 5px 0 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+}
+
+button {
+    font-size: 0.9rem !important; 
+    padding: 0.5em 1em !important;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Dugmad na 100% sirine */
+.card > button {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Verifikacija dugmad */
+.verification-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.verification-buttons button {
+    flex-grow: 1;
+}
+
+/* Ostalo */
+.verification-card > div:last-child {
+    margin-top: 1rem; 
+    padding: 10px; 
+    background-color: #e9ffe9; 
+    border: 1px solid #c3e6cb; 
+    border-radius: 4px; 
+    color: #155724; 
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+hr {
+    margin: 1rem 0; 
+    border: 0; 
+    border-top: 1px solid #dee2e6;
+}

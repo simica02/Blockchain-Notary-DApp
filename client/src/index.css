@@ -1,0 +1,26 @@
+/* === index.css - FIKSIRA FONT SIZE I CENTRIRA === */
+
+/* Uklonimo sve margine i paddinge za cistu bazu */
+html {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 14px; /* KLJUČNO: SMANJILI SMO OSNOVNI FONT NA 14px za kompaktnost */
+  line-height: 1.5;
+  background-color: #f8f9fa; 
+  color: #213547; 
+}
+
+/* Nateramo body i #root da popune ceo ekran i centriraju aplikaciju */
+body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+#root {
+  display: flex;
+  justify-content: center; /* Horizontalno centriranje */
+  align-items: flex-start; /* Pomerimo na vrh (da se ne rasteže) */
+  box-sizing: border-box; 
+  padding-top: 15px; /* Mali prostor od vrha */
+}
